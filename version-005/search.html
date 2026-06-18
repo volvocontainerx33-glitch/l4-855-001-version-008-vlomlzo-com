@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>影片搜索-欧美热门电影-热门好看的电影大全-高清影片观看</title>
+  <meta name="description" content="搜索欧美热门电影、精选片单和高分影片。">
+  <meta name="keywords" content="欧美热门电影,欧美电影,热门电影大全,高清影片,电影观看,精选片单,电影合集">
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="canonical" href="index.html">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="index.html" aria-label="欧美电影馆">
+      <span class="brand-mark">▶</span>
+      <span class="brand-copy">
+        <strong>欧美电影馆</strong>
+        <em>热门好看的电影大全</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+          <a href="category/hot-list.html">热门片单</a>
+          <a href="category/euro-movies.html">欧美精选</a>
+          <a href="category/high-score.html">高分影片</a>
+          <a href="category/new-release.html">新片推荐</a>
+          <a href="category/suspense-thriller.html">悬疑惊悚</a>
+      <a href="rankings.html">排行</a>
+    </nav>
+    <form class="top-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form class="mobile-search" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav aria-label="移动导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">全部分类</a>
+        <a href="category/hot-list.html">热门片单</a>
+        <a href="category/euro-movies.html">欧美精选</a>
+        <a href="category/high-score.html">高分影片</a>
+        <a href="category/new-release.html">新片推荐</a>
+        <a href="category/suspense-thriller.html">悬疑惊悚</a>
+      <a href="rankings.html">热度排行</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="page-hero small-hero">
+    <div class="container">
+      <a class="back-link" href="index.html">‹ 返回首页</a>
+      <h1>影片搜索</h1>
+      <p>输入片名、地区、类型、年份或关键词，快速找到想看的内容。</p>
+      <div class="search-panel">
+        <input type="search" id="searchInput" placeholder="搜索欧美电影、悬疑、动作、爱情..." autocomplete="off">
+        <select id="regionFilter">
+          <option value="">全部地区</option>
+          <option value="美国">美国</option>
+          <option value="英国">英国</option>
+          <option value="中国">中国</option>
+          <option value="日本">日本</option>
+          <option value="韩国">韩国</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  <section class="container content-section">
+    <div class="search-summary" id="searchSummary">输入关键词开始搜索</div>
+    <div class="card-grid four-cols" id="searchResults"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <section>
+      <div class="footer-brand">
+        <span class="brand-mark">▶</span>
+        <strong>欧美电影馆</strong>
+      </div>
+      <p>整理欧美热门电影内容，包含热门片单、精选电影和高分影片栏目。</p>
+    </section>
+    <section>
+      <h3>快速导航</h3>
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="categories.html">分类总览</a></li>
+        <li><a href="rankings.html">热度排行</a></li>
+        <li><a href="search.html">影片搜索</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>精选分类</h3>
+      <ul>
+        <li><a href="category/hot-list.html">热门片单</a></li>
+        <li><a href="category/euro-movies.html">欧美精选</a></li>
+        <li><a href="category/high-score.html">高分影片</a></li>
+        <li><a href="category/new-release.html">新片推荐</a></li>
+        <li><a href="category/suspense-thriller.html">悬疑惊悚</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>站内信息</h3>
+      <ul>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="copyright.html">版权声明</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 欧美电影馆</span>
+    <span>欧美热门电影-热门好看的电影大全-高清影片观看</span>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
+<script src="assets/search-index.js" defer></script>
+<script src="assets/search.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

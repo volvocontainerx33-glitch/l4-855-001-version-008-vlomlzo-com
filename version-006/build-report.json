@@ -1,0 +1,22 @@
+{
+  "movies": 2000,
+  "html_files": 2016,
+  "movie_pages": 2000,
+  "category_counts": {
+    "selected": 167,
+    "chinese": 167,
+    "asian": 167,
+    "western": 167,
+    "suspense": 167,
+    "scifi": 167,
+    "romance": 167,
+    "comedy": 167,
+    "action": 166,
+    "costume": 166,
+    "drama": 166,
+    "new": 166
+  },
+  "baidu_missing": [],
+  "missing_movie_pages": [],
+  "image_files_in_output": []
+}
